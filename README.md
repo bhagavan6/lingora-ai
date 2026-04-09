@@ -34,22 +34,14 @@ Most educational content on the internet has 3 big problems:
 
 LINGORA AI processes any content through **4 intelligent layers:**
 
-INPUT (any text)
-↓
-🧠 Layer 1 — UNDERSTAND
-AI reads and finds the core meaning
-↓
-✂️  Layer 2 — SIMPLIFY
-Adjusts difficulty for Beginner / Student / Expert
-↓
-📍 Layer 3 — CULTURAL LOCALIZATION
-Replaces examples with Indian context
-(Tata, Reliance, Rupees, Cricket, Diwali...)
-↓
-🌐 Layer 4 — TRANSLATE
-Converts to Hindi, Tamil, Bengali, Telugu & more
-↓
-OUTPUT (easy, relatable, localized content)
+| Step | Layer | What it does |
+|------|-------|--------------|
+| 📥 | **INPUT** | Any text, article or concept |
+| 🧠 | **Layer 1 — UNDERSTAND** | AI reads and finds the core meaning |
+| ✂️ | **Layer 2 — SIMPLIFY** | Adjusts for Beginner / Student / Expert |
+| 📍 | **Layer 3 — CULTURAL LOCALIZATION** | Replaces with Indian context (Tata, Reliance, Rupees, Cricket...) |
+| 🌐 | **Layer 4 — TRANSLATE** | Converts to Hindi, Tamil, Bengali, Telugu & more |
+| 📤 | **OUTPUT** | Easy, relatable, localized content |
 
 ---
 
