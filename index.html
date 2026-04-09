@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Localization Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>LINGORA AI</h1>
+        <h2>AI-Powered Multilingual Content Localization Engine</h2>
+        <p>⚡ Understand &rarr; Adapt &rarr; Localize &rarr; Deliver ⚡</p>
+        <div class="layers">
+            <div class="layer-badge">🌐 LANGUAGE</div>
+            <div class="layer-badge">🧠 COMPLEXITY</div>
+            <div class="layer-badge">📍 CULTURE</div>
+            <div class="layer-badge">🔊 AUDIO</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <label>> Enter Content</label>
+            <textarea id="inputText" placeholder="// Paste any text, article or concept here..."></textarea>
+        </div>
+
+        <div class="card">
+            <div class="grid2">
+                <div>
+                    <label>> Target Language</label>
+                    <select id="langSelect">
+                        <option value="Hindi">Hindi</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Bengali">Bengali</option>
+                        <option value="Marathi">Marathi</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="Arabic">Arabic</option>
+                    </select>
+                </div>
+                <div>
+                    <label>> Learning Level</label>
+                    <select id="levelSelect">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Student">Student</option>
+                        <option value="Expert">Expert</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button id="runBtn">⚡ Execute Localization Engine</button>
+
+        <div class="card">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+                <label style="margin-bottom:0;">> Localized Output</label>
+                <button id="copyBtn" style="display:none;" title="Copy output">📋</button>
+            </div>
+            <div id="output">// Awaiting input...</div>
+            <button id="speakBtn" style="display:none;">🔊 LISTEN TO OUTPUT</button>
+        </div>
+    </main>
+
+    <footer>
+        > BUILT WITH AI — MULTILINGUAL CONTENT LOCALIZATION ENGINE_
+    </footer>
+
+    <div class="card" id="historyCard" style="display:none;">
+        <label>🕒 History</label>
+        <div id="historyList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

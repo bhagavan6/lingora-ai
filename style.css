@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;900&family=Orbitron:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background: #0a0a0a;
+    min-height: 100vh;
+    color: #ffd60a;
+}
+
+header {
+    background: #111111;
+    border-bottom: 2px solid #ffd60a;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #ffd60a;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+
+header h2 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #888;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 14px;
+}
+
+header p {
+    font-size: 16px;
+    font-weight: 900;
+    color: #ffd60a;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.layers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.layer-badge {
+    background: #0a0a0a;
+    border: 2px solid #ffd60a;
+    padding: 10px 22px;
+    font-size: 18px;
+    color: #ffd60a;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.layer-badge:hover {
+    background: #ffd60a;
+    color: #0a0a0a;
+    cursor: default;
+}
+
+main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.card {
+    background: #111111;
+    border: 2px solid #ffd60a;
+    border-radius: 0;
+    padding: 22px;
+    margin-bottom: 16px;
+}
+
+.card label {
+    display: block;
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffd60a;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    background: #0a0a0a;
+    border: 1px solid #333;
+    border-radius: 0;
+    padding: 12px;
+    color: #ffd60a;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+
+textarea::placeholder {
+    color: #444;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ffd60a;
+}
+
+select {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Exo 2', sans-serif;
+    background: #0a0a0a;
+    border: 1px solid #333;
+    border-radius: 0;
+    color: #ffd60a;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffd60a;
+}
+
+select option {
+    background: #111;
+    color: #ffd60a;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+#runBtn {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Exo 2', sans-serif;
+    background: #ffd60a;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-bottom: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#runBtn:hover {
+    background: #ffea61;
+    transform: translateY(-2px);
+}
+
+#runBtn:disabled {
+    background: #444;
+    color: #222;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#output {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #cccccc;
+    min-height: 60px;
+    white-space: pre-wrap;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.typing::after {
+    content: '█';
+    color: #ffd60a;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+#speakBtn {
+    margin-top: 16px;
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Exo 2', sans-serif;
+    background: transparent;
+    color: #ffd60a;
+    border: 2px solid #ffd60a;
+    border-radius: 0;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s;
+}
+
+#speakBtn:hover {
+    background: #ffd60a;
+    color: #0a0a0a;
+}
+
+#copyBtn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    background: transparent;
+    color: #ffd60a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0.7;
+}
+
+#copyBtn:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#historyCard {
+    margin-top: 10px;
+}
+
+.history-item {
+    border: 1px solid #333;
+    border-left: 3px solid #ffd60a;
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.history-item:hover {
+    background: #1a1a1a;
+}
+
+.history-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.history-lang {
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffd60a;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.history-time {
+    font-size: 10px;
+    color: #555;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.history-preview {
+    font-size: 12px;
+    color: #888;
+    font-family: 'Exo 2', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clear-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Exo 2', sans-serif;
+    background: transparent;
+    color: #555;
+    border: 1px solid #333;
+    border-radius: 0;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.clear-btn:hover {
+    color: #ffd60a;
+    border-color: #ffd60a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+    color: #333;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 0.1em;
+    border-top: 1px solid #1a1a1a;
+}
